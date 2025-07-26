@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #283149;
+  transition: background-color 0.2s;
 }
 
 h1 {
@@ -8,41 +9,41 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
   font-size: 1.5rem;
+  margin-top: 50px;
 }
 
 .w {
-background-image: url("images/crash.png");
+  background-image: url("images/tom-1.png");
 }
 
 .a {
-  background-image: url("images/kick.png");
+  background-image: url("images/tom-2.png");
 }
 
 .s {
-  background-image: url("images/snare.png");
+  background-image: url("images/tom-3.png");
 }
 
 .d {
-  background-image: url("images/tom1.png");
+  background-image: url("images/tom-4.png");
 }
 
 .j {
-  background-image: url("images/tom2.png");
+  background-image: url("images/crash.png");
 }
 
 .k {
-  background-image: url("images/tom3.png");
+  background-image: url("images/kick.png");
 }
 
 .l {
-  background-image: url("images/tom4.png");
+  background-image: url("images/snare.png");
 }
 
 .set {
@@ -50,17 +51,13 @@ background-image: url("images/crash.png");
 }
 
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+  background-color: #a20000;
 }
 
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
-}
-
-.red {
-  color: red;
+  transform: scale(0.95);
 }
 
 .drum {
@@ -79,4 +76,25 @@ background-image: url("images/crash.png");
   text-align: center;
   margin: 10px;
   background-color: white;
+  transition: all 0.1s;
+}
+
+.game-controls {
+  margin-bottom: 20px;
+}
+
+#startGameBtn {
+  background-color: #DA0463;
+  color: #DBEDF3;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-family: 'Arvo', cursive;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startGameBtn:hover {
+  background-color: #f7308a;
 }
